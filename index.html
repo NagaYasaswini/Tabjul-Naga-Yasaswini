@@ -8,7 +8,7 @@
     <style>
         .about-section {
             text-align: center;
-            padding: 50px 20px;
+            padding: 50px 0;
         }
 
         .about-section h1 {
@@ -18,8 +18,8 @@
         }
 
         .about-image {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             border: 4px solid #000;
             object-fit: cover;
@@ -30,26 +30,317 @@
         .about-text {
             max-width: 600px;
             margin: 0 auto;
-            font-size: 1.1rem;
+            font-size: 1.0rem;
             line-height: 1.6;
         }
+        #projects {
+    padding: 60px 0;
+        }
+
+/* Center the section title */
+        #projects h2 {
+            font-weight: bold;
+            font-size: 2.5rem;
+        }
+
+/* Card styling */
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensure images are properly sized */
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
+}
+
+/* Center text and links */
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style the links at the bottom */
+.card-body div {
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+.card-body a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #007bff;
+}
+
+/* Ensure section has some space */
+#projects {
+    padding: 60px 0;
+}
+
+/* Center the section title */
+#projects h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8x rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ensure images are properly sized */
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
+}
+
+/* Center text and links */
+.card-body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Style the links at the bottom */
+.card-body div {
+    margin-top: auto;
+    font-size: 1rem;
+}
+
+.card-body a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #007bff;
+}
+
+
     </style>
 </head>
 <body>
 
     <section class="about-section">
         <h1>About</h1>
-        <img src="images/about.jpg" alt="Profile Image" class="about-image">
+        <img src="images/about/me.png" alt="Profile Image" class="about-image">
         <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet dolor dolor. 
-            Suspendisse ligula elit, hendrerit ut bibendum quis, facilisis vitae est. Vivamus vitae felis 
-            sit amet sem rhoncus euismod.
+            I am a Machine Learning enthusiast with a proven track record of quickly adapting and excelling in the finance field. My role involved assisting in the documentation and ensuring the 100% successful transition of a major project, where I took part in streamlining processes and developed a tracker to monitor updates efficiently.
+            
         </p>
         <p class="about-text">
-            Duis convallis ligula sed pretium tristique. Duis nunc risus, lacinia eget cursus id, suscipit ac metus. 
-            Sed varius sed tortor congue aliquam. Praesent vitae tristique diam. Donec tincidunt hendrerit tortor.
+            While working in finance, I have simultaneously pursued my passion for Machine Learning, continuously updating my knowledge and skills. Recently, I have started learning AWS and OCI to deepen my expertise in the ML domain. 
+        </p>
+        <p class="about-text">
+            My ability to learn rapidly and apply new knowledge effectively has been instrumental in my professional success, and I remain committed to furthering my understanding and capabilities in both finance and Machine Learning.
+
         </p>
     </section>
+
+<!-- Project section -->
+
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-4">Projects</h2>
+        <div class="row justify-content-center">
+            <!-- Project 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="images/projects/images.jpg" class="card-img-top" alt="Loan Amount Prediction">
+                    <div class="card-body">
+                        <h5 class="card-title">Loan Amount Prediction</h5>
+                        <p class="card-text">Performing End-End Machine Learning Life Cycle project using the Loan amount Data from Kaggle. </p>
+                        <a href="https://github.com/NagaYasaswini/LoanAmountPrediction" class="btn btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- Skills section --> 
+         
+    <section id="skills" class="container text-center my-5">
+        <h2 class="mb-4">Skills</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/python.png" class="card-img-top mx-auto d-block" alt="Python Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Python</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/Coursera FDM4RMWDZAQC.png" class="card-img-top mx-auto d-block" alt="Data Visualization Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Program Certificate</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="https://drive.google.com/file/d/1vj-RMkNSzEaAZWOAcwataIo5DtTiZaYg/view?usp=drive_link" class="text-primary">Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/Amazon SageMaker.png" class="card-img-top mx-auto d-block" alt="SQL Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Amazon SageMaker</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/Pandas.png" class="card-img-top mx-auto d-block" alt="Data Storytelling Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pandas</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/numpy.png" class="card-img-top mx-auto d-block" alt="Data Storytelling Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Numpy</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/seaborn.png" class="card-img-top mx-auto d-block" alt="Data Storytelling Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Seaborn</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/matplotlib.png" class="card-img-top mx-auto d-block" alt="Data Storytelling Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mathplotlib</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 p-3">
+                    <img src="images/skills/github.png" class="card-img-top mx-auto d-block" alt="Data Storytelling Icon" style="width: 80px;">
+                    <div class="card-body">
+                        <h5 class="card-title">GitHub & Git</h5>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <a href="https://medium.com/@nagayasaswini/how-to-start-with-github-1b17de529c3b" class="text-primary">Blog Post</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Contact Section-->
+    <section id="contact" class="container-fluid bg-dark text-white py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            
+            <div class="row justify-content-center mb-4">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <i class="fas fa-envelope fa-lg me-2"></i>
+                    <span>nagayasaswini2128@gmail.com</span>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <i class="fas fa-phone fa-lg me-2"></i>
+                    <span>7995884210</span>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="www.linkedin.com/in/naga-yasaswini-tabjul-171082216" class="btn btn-pink rounded-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                        <img src="icons/LinkedIn.png" class="social-icon" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/NagaYasaswini" class="btn btn-pink rounded-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                        <img src="icons/github.png" class="social-icon" alt="GitHub">
+                    </a>
+                    <a href="https://medium.com/@nagayasaswini" class="btn btn-pink rounded-circle mx-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium">
+                        <img src="icons/Medium-Emblem.png" class="social-icon" alt="Medium">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .btn-pink {
+            background-color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+        }
+        .btn-pink:hover {
+            background-color: #ddd;
+        }
+        .social-icon {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+    
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+
 
 </body>
 </html>
